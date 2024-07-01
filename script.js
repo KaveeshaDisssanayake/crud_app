@@ -16,6 +16,15 @@ function showAlert(message, className) {
 
 // clear all fields
 
+function clearFields(){
+  document.querySelector("#firstName").value = "";
+  document.querySelector("#lastName").value = "";
+  document.querySelector("#email").value = "";
+}
+
+// add data
+
+
 
 // delete data
 
