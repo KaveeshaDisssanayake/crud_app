@@ -64,7 +64,17 @@ document.querySelector("#student-form").addEventListener("submit" , (e) =>{
     }
 }) ;
 
-//
+//edit data
+
+document.querySelector("student-list").addEventListener("click" , (e) =>{
+    target = e.target;
+    if(target.classList.contains("edit")){
+        selectedRow = target.parentElement.parentElement;
+        document.querySelector("#firstName").value = selectedRow.children[0].textContent;
+        document.querySelector("#lastName").value = selectedRow.children[1].textContent;
+        document.querySelector("#email").value = selectedRow.children[2].textContent;
+    }
+})
 
 // delete data
 
